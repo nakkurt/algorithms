@@ -17,24 +17,16 @@ aperture(6, [1, 2, 3, 4, 5]); // []
 */
 
 function aperture (n,arr) {
-  //create empty result array
-  var result = [];
-  // return empty array if n 0 or n > arr.length
+  let result = [];
   if(n > arr.length || n === 0) {
     return result;
   }
   //create subarrays with number of elements matching n
-  //define subarray count
   subArrCount = arr.length-n+1 
-  //create subarrays wih values from array
-  var i = 0;
+  let i = 0;
   while(i < subArrCount) {
-  
   result.push(arr.slice(i,n+i));
-  //push subarrays into result array
   i++;
   }
-
-  // return result array
   return result;
 }
