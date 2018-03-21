@@ -9,7 +9,7 @@ function isNumber(val) {
   return Number.isFinite(val);
 }
 
-let isString(val) {
+function isString(val) {
   return typeof val === "string";
 }
 
