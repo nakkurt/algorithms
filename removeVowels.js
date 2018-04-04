@@ -7,7 +7,7 @@
 
 // Try to solve this using filter.
 
-function removeVowels(str){
+const removeVowels = (str) => {
   let strArr = str.toLowerCase().split('');
   let vowels = 'aeiou'
   let vowelsRemoved = strArr.filter(char => !vowels.includes(char));
